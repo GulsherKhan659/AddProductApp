@@ -51,7 +51,12 @@ public class Add_Products extends AppCompatActivity {
                 }else{
 
                    //dataBase is object of dbManger class & insertData is method of this class
-                  ProductBean product =new ProductBean(product_name,product_quantity,product_catogery,product_company, product_expiry);
+                  ProductBean product =new ProductBean();
+                  product.setName(product_name);
+                  product.setQuantity(product_quantity);
+                  product.setCatogery(product_catogery);
+                  product.setCompany(product_company);
+                  product.setExpiry(product_expiry);
                     dataBase.insertData(product);
                 }
 

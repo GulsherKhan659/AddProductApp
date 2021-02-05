@@ -17,13 +17,19 @@ public class Show_Products extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show__products);
         Cursor getDataCursor= dataBase.fetchData();
+        my_ListView = findViewById(R.id.list_view);
 
-        int [] to = {R.id.viewp_id,R.id.viewp_name,R.id.viewp_quantity,R.id.viewp_catogery,R.id.viewp_company,R.id.viewp_expiry};
-        String [] from ={"p_id","p_name","p_quantity","p_catogery","p_company","p_expiry"};
+        try {
+            String[] from = {"p_id", "p_name", "p_quantity", "p_catogery", "p_company", "p_expiry"};
+            int[] to = {R.id.viewp_id, R.id.viewp_name, R.id.viewp_quantity, R.id.viewp_catogery, R.id.viewp_company, R.id.viewp_expiry};
 
+            SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, R.layout.show_product_layout, getDataCursor, from, to, 1);
+            my_ListView.setAdapter(adapter);
+        }catch (Exception asd){
+            System.out.println(getDataCursor);
+            System.out.println(asd);
 
-        SimpleCursorAdapter adapter = new  SimpleCursorAdapter(this,R.layout.show_product_layout,getDataCursor,from,to,1);
-        my_ListView.setAdapter(adapter);
+        }
 
     }
 }
