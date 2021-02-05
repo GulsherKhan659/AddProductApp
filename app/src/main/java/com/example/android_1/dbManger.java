@@ -25,8 +25,14 @@ public class dbManger extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String query= "CREATE TABLE "+table_name+"("+col_1+"INTEGER PRIMARY KEY ,"+col_2+"TEXT,"+col_3+"INTEGER,"+col_4+"TEXT,"+col_5+"TEXT,"+col_6+"TEXT);";
+        try {
+
+
         db.execSQL(query);
-   }
+        }catch (Exception e){
+            System.out.print(e);
+        }
+        }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -43,8 +49,7 @@ public class dbManger extends SQLiteOpenHelper {
        values.put(col_5,product.getCompany());
        values.put(col_6,product.getExpiry());
 
-       db.insert(table_name,null,values);
-    }
+}
 
     //Method for Fetch
     Cursor fetchData(){

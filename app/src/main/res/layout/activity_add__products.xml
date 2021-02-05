@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Products">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:text="ADD PRODUCT CARD"
+            android:padding="15dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+
+            />
+
+        <LinearLayout
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Product Name "/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_name"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Product Quantity "/>
+
+        <Spinner
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:entries="@array/quantity"
+          android:id="@+id/p_quantity"
+          />
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+
+                android:textSize="16dp"
+                android:text="Product Catogery "/>
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/catogery"
+                android:id="@+id/p_catogery"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Product Company "/>
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/company"
+            android:id="@+id/p_company"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Product Expiry "/>
+            <TextView
+                android:id="@+id/p_expiry"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Choose Date Here"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/p_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text=" ADD PRODUCT "/>
+    </LinearLayout>
+</RelativeLayout>

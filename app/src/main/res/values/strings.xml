@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">Android-1</string>
+    <string-array name="quantity">
+        <item></item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="catogery">
+        <item></item>
+        <item>SOAP</item>
+        <item>SHAMPO</item>
+        <item>TOOTHPASTE</item>
+        <item>MOBILE</item>
+        <item>COMPUTER</item>
+        <item>LCD</item>
+        <item>ACCESSORIS</item>
+        <item>LAPTOP</item>
+    </string-array>
+
+    <string-array name="company">
+        <item></item>
+        <item>NOVA LEATHERS</item>
+        <item>UNILIVER</item>
+        <item>P &amp; G</item>
+        <item>LG</item>
+        <item>SAMSUNG</item>
+        <item>HUWAIE</item>
+        <item>BATA</item>
+        <item>NIKE</item>
+        <item>DELL</item>
+        <item>HP</item>
+    </string-array>
 </resources>
