@@ -29,6 +29,26 @@
             android:text="SHOW PRODUCT"
             android:onClick="Btn_Click"
             />
+        <EditText
+
+            android:layout_width="180dp"
+            android:hint="Search By Catogery"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_text"
+            android:layout_marginBottom="15dp"
+            />
+        <Button
+
+            android:layout_width="180dp"
+            android:elevation="5dp"
+            android:layout_height="wrap_content"
+            android:text="SHOW Search PRODUCT"
+            android:id="@+id/ssp"
+            android:onClick="Btn_Click"
+
+            android:layout_marginBottom="15dp"
+            />
+
 
 
     </LinearLayout>

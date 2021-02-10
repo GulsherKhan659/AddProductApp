@@ -57,7 +57,9 @@ public class Add_Products extends AppCompatActivity {
                   product.setCatogery(product_catogery);
                   product.setCompany(product_company);
                   product.setExpiry(product_expiry);
-                    dataBase.insertData(product);
+                    if(dataBase.insertData(product)>0){
+                        System.out.println("Insert Successfull");
+                    }
                 }
 
 
